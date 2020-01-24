@@ -1,0 +1,17 @@
+<main>
+  <section class="second_task">
+    <div class="section_title">
+      <h2>Second task</h2>
+    </div>
+    <div class="task">
+      <div class="list_item"
+           *ngFor="let item of list; let index = index"
+           (click)="onClick(index)"
+           [ngClass]="isClicked && index === id ? 'changed_item': ''"
+      >
+        <h3>{{item.label}}</h3>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+  </section>
+</main>

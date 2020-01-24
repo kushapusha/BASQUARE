@@ -1,0 +1,45 @@
+main {
+  margin-top: 650px;
+  height: max-content;
+  min-height: 300px;
+}
+
+.section_title {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.section_title h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.section_title h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: dimgrey;
+  margin: 10px auto 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.list_item {
+  padding: 10px;
+  width: 25%;
+  border: 1px solid dimgrey;
+}
+
+.list_item p {
+  margin: 0;
+}
+
+.changed_item {
+  transition-duration: 0.5s;
+  color: coral;
+}
